@@ -6,14 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    background: #fde8f2; 
-    font-family: "Segoe UI", Arial, sans-serif;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-table {
+  table {
     width: 90%;
     margin: 40px auto;
     border-collapse: collapse;
@@ -21,42 +18,72 @@ table {
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 16px 36px rgba(190, 110, 150, 0.25);
-}
+    th, td {
+      border: lightpink;
+      text-align: center;
+	  
+    }
 
-th, td {
-    padding: 14px;
-    border: 1px solid #f5c7dc; 
-}
+    header {
+      background-color: pink;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
 
-th {
-    background: linear-gradient(to right, #e79fc5, #de92bb);
-    color: #ffffff;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
+    nav {
+      float: left;
+      width: 30%;  
+      background: #ccc;
+      padding: 20px;
+	  background-color: palevioletred;
+	  
+    }
 
-th a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+	  text-align: left;
+	 
+	  
+    }
+	nav, article {
+	min-height: 40vh;
+	}
 
-th a:hover {
-    opacity: 0.85;
-}
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: white;
+	  text-align: left;
+    }
 
-.hh img {
-    border-radius: 16px;
-    border: 5px solid #ffffff;
-    box-shadow: 0 10px 28px rgba(190, 110, 150, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.hh img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 14px 36px rgba(190, 110, 150, 0.5);
-}
-</style>
+    section::after {
+      content: "";
+	  display: table;
+	  clear: both;
+	  
+	 
+ 
+    }
+
+    footer {
+      background-color: pink;
+     padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+		height: auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -109,5 +136,6 @@ th a:hover {
 </body>
 
 </html>
+
 
 
