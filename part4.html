@@ -68,26 +68,119 @@
 	  display: table;
 	  clear: both;
 	  
-	 
- 
-    }
+	 <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
 
-    footer {
-      background-color: pink;
-     padding: 10px;
-      text-align: center;
-      color: white;
-    }
+body {
+    background: #fde8f2;
+}
 
-    @media (max-width: 600px) {
-      nav, article {
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff0f7; 
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(190,110,150,0.25);
+}
+
+th, td {
+    border: 1px solid #f5c7dc;
+    text-align: center;
+    padding: 12px;
+}
+
+th {
+    background: linear-gradient(to right, #e79fc5, #de92bb); 
+    color: white;
+    font-size: 16px;
+}
+
+th a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+th a:hover {
+    opacity: 0.85;
+}
+
+header {
+    background-color: #f7bcd3; 
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    border-radius: 8px;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    background-color: #f5a8c9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+article {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: #fff0f7;
+    border-radius: 8px;
+    text-align: left;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #f7bcd3;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav, article {
         width: 100%;
-		height: auto;
-      }
+        float: none;
+        margin-bottom: 20px;
     }
-  </style>
+}
+</style>
 </head>
-
 <body>
 
 <table border="1" width="90%" height="15%" table style="background-color:"pink">
@@ -137,4 +230,5 @@
 </body>
 
 </html>
+
 
