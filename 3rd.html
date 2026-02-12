@@ -1,6 +1,9 @@
 <html>
 <head>
 <title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 * {
     box-sizing: border-box;
@@ -10,23 +13,22 @@
 }
 
 body {
-    background: #fde8f2; 
+    background: #fde8f2;
 }
-
 
 table {
     width: 90%;
     margin: 30px auto;
     border-collapse: collapse;
-    background-color: #fff0f7;
+    background-color: #fff0f7; 
     border-radius: 16px;
     box-shadow: 0 12px 30px rgba(190,110,150,0.25);
 }
 
 th, td {
     border: 1px solid #f5c7dc;
-    padding: 12px;
     text-align: center;
+    padding: 12px;
 }
 
 th {
@@ -45,40 +47,124 @@ th a:hover {
     opacity: 0.85;
 }
 
-.hh img {
-    border-radius: 16px;
-    border: 5px solid white;
-    box-shadow: 0 8px 22px rgba(190,110,150,0.4);
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+header {
+    background-color: #f7bcd3; 
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    border-radius: 8px;
 }
 
-.hh img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 30px rgba(190,110,150,0.6);
+nav {
+    float: left;
+    width: 30%;
+    background-color: #f5a8c9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+article {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    background-color: #fff0f7;
+    border-radius: 8px;
+    text-align: left;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #f7bcd3;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<table border="1" width="90%" height="15%" table style="background-color:"white">
+<table border="1" width="90%" height="15%" table style="background-color:"pink">
     <tr>
         <th bgcolor="palevioletred"><a href="index.html">HOME</a></th>
         <th bgcolor="palevioletred"><a href="about me href.html">ABOUT ME</a></th>
-        <th bgcolor="pink">HOBBIES</th>
-        <th bgcolor="palevioletred"><a href="more.html">MORE</a></th>
+        <th bgcolor="palevioletred"><a href="3rd.html">HOBBIES</a></th>
+        <th bgcolor="pink">MORE</th>
 		</tr>
 		<tr>
-		<td colspan="4" class="hh"><center><img src="🏸💞.jpg" width="600">
-		</tr>
-		</table>
-		</body>
+		<td colspan="4">
+		
+		<header>
+  <h2>Cats</h2>
+</header>
+</tr>
+<tr>
+<td colspan="4">
+<section>
+  <nav>
+    <ul>
+	<li> &nbsp; </li>
+      <li><a href=>Persian cat</a></li>
+      <li><a href="part2.html">Ragdoll</a></li>
+      <li><a href="part3.html">Sphynx cat</a></li>
+	  <li><a href="part4.html">Exotic Shorthair</a></li>
+	  <li><a href="part5.html">Siberian cat</a></li>
+	  <li> &nbsp; </li>
+    </ul>
+  </nav>
+ 
+  <article>
+    <h1>Persian cat</h1>
+    <p>The Persian cat, also known as the Persian Longhair or simply Persian, is a long-haired traditional breed of cat characterised by a round face and petite, but not flat and not smashed in, muzzle.</p>
+<p>Lifespan: 12 – 15 years.</p>
+<p>Temperament: Gentle, Adaptable, Charming, Sweet-tempered, Communicative, Playful</p>
+<p>Origin: Iran</p>
+  </article>
+</section>
+</tr>
+<tr>
+<td colspan="4">
+<footer>
+  <p>cat lover</p>
+</footer>
+</tr>
+</table>
+</body>
 
-		</html>
-
-
-
-
-
+</html>
